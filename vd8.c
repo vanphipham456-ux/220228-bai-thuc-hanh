@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int d, v;
+    scanf("%d%d", &d, &v);
+
+    if (d < 0 || v < 0 || d == 0 && v < 500000)
+        printf("INVALID");
+    else if (v >= 500000 && d <= 15)
+        printf("0");
+    else if (d <= 5)
+        printf("15000");
+    else if (d <= 15)
+        printf("25000");
+    else
+        printf("40000");
+
+    return 0;
+}
+
